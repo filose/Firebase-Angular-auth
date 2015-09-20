@@ -1,0 +1,8 @@
+<form name="register_form" ng-submit="register(user.name, user.email, user.pass)">
+  <input type="text" placeholder="Choose a username" ng-model="user.name" ng-maxlength="10" unique-username required>
+  <input type="text" placeholder="Enter email" ng-model="user.email" required>
+  <input type="password" placeholder="Enter password" ng-model="user.pass" required>
+  <button type="submit">Create account</button>
+</form>
+
+<a href="/#/login">Already have an account?</a>
